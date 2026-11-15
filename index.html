@@ -17,6 +17,22 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 </script>
+<!-- Event snippet for جهة اتصال conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18576615277/Bo6wCPX8grkdEO3OgppF',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 <meta name="description" content="تأجير لوازم حفلات ومناسبات في الدمام والخبر والظهران والمنطقة الشرقية. كراسي ملكي ومخمل وVIP، طاولات طعام وقزاز، خيام أوروبية، مكيفات صحراوية وفريون، مراوح، كنب نسائي، كوشات أفراح، زل، عقود إنارة، دفايات غاز هرمية، وتجهيز وتنظيم الأعراس والمناسبات.">
 
 <meta name="keywords" content="تأجير لوازم حفلات ومناسبات, تأجير مستلزمات أفراح, تأجير كراسي مناسبات, تأجير كراسي ملكي, تأجير كراسي مخمل, تأجير كراسي VIP, تأجير كراسي جلد أبيض, تأجير كراسي شفافة, تأجير طاولات طعام, تأجير طاولات قزاز, تأجير طاولات دائرية, تأجير طاولات VIP, تأجير خيام أوروبية, تأجير مكيفات صحراوية, تأجير مكيفات فريون, تأجير مراوح, تأجير كنب نسائي, تأجير كوشات أفراح, تأجير عقود إنارة, تأجير زل أزرق, تأجير دفايات غاز هرمية, تجهيز مجالس, تنظيم زواجات, تنظيم أعراس, تجهيز حفلات الدمام, تأجير حفلات الخبر, تأجير مستلزمات مناسبات الشرقية">
